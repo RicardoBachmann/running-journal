@@ -1,6 +1,19 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header {
+  padding: 1rem;
+  background-color: black;
+  font-style: italic;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  h1 {
+    color: deeppink;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+  }
 }

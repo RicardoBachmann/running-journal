@@ -3,13 +3,24 @@ import data from "./data.js";
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
 
-console.log(data);
-
 function App() {
+  const cardElements = data.map((element) => {
+    return (
+      <Card
+        title={element.title}
+        location={element.location}
+        googleMapsUrl={element.googleMapsUrl}
+        startDate={element.startDate}
+        distance={element.distance}
+        description={element.description}
+        imageUrl={element.imageUrl}
+      />
+    );
+  });
   return (
     <>
       <Header />
-      <Card />
+      <section>{cardElements}</section>
     </>
   );
 }

@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: "EDP Lisbon Half-Marathon",
     location: "Lisbon, Portugal",
     googleMapsUrl: "",
@@ -10,6 +11,7 @@ export default [
     imageUrl: "https://www.lisbon-half-marathons.com/images/lis002.jpg",
   },
   {
+    id: 2,
     title: "HASPA Marathon",
     location: "Hamburg, Germany",
     googleMapsUrl: "",
@@ -21,6 +23,7 @@ export default [
       "https://haspa-marathon-hamburg.de/wp-content/uploads/2024/04/DSC0688.jpg",
   },
   {
+    id: 3,
     title: "31. Hella Half-Marathon",
     location: "Hamburg, Germany",
     googleMapsUrl: "",
@@ -32,6 +35,7 @@ export default [
       "https://www.dielaufgesellschaft.de/hamburg-halbmarathon/wp-content/uploads/sites/2/2020/02/20180701-IMAGEFOTOS-HELLA-HAMBURG-HALBMARATHON-OFFENBLENDE-MBA-262-scaled-e1580897325271.jpg",
   },
   {
+    id: 4,
     title: "Valencia Half-Marathon",
     location: "Valencia, Spain",
     googleMapsUrl: "",

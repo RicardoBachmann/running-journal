@@ -4,23 +4,24 @@ import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
 
 function App() {
-  const cardElements = data.map((element) => {
+  const cards = data.map((item) => {
     return (
       <Card
-        title={element.title}
-        location={element.location}
-        googleMapsUrl={element.googleMapsUrl}
-        startDate={element.startDate}
-        distance={element.distance}
-        description={element.description}
-        imageUrl={element.imageUrl}
+        key={item.id}
+        title={item.title}
+        location={item.location}
+        googleMapsUrl={item.googleMapsUrl}
+        startDate={item.startDate}
+        distance={item.distance}
+        description={item.description}
+        imageUrl={item.imageUrl}
       />
     );
   });
   return (
     <>
       <Header />
-      <section>{cardElements}</section>
+      <section>{cards}</section>
     </>
   );
 }

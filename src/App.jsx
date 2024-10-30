@@ -8,13 +8,8 @@ function App() {
     return (
       <Card
         key={item.id}
-        title={item.title}
-        location={item.location}
-        googleMapsUrl={item.googleMapsUrl}
-        startDate={item.startDate}
-        distance={item.distance}
-        description={item.description}
-        imageUrl={item.imageUrl}
+        {...item}
+        // spread to pass properties from item to Card as props.
       />
     );
   });

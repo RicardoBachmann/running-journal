@@ -5,6 +5,14 @@ export default function Card(props) {
     <>
       <div className="card--container">
         <div className="image--container">
+          <div className="badge-container">
+            {props.isSuperhalf && (
+              <div className="badge-text">Superhalf 🥇</div>
+            )}
+            <div className="race-status">
+              {props.isOpen ? "Open spots ✅" : "Open spots ❌"}
+            </div>
+          </div>
           <img src={props.imageUrl} alt=""></img>
         </div>
         <div className="info--container">
